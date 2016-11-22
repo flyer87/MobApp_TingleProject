@@ -1,0 +1,35 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:title="@string/pref_order_category_title"
+        android:key="pref_key_ordering_category">
+        <CheckBoxPreference
+            android:key="pref_order_important"
+            android:summary="@string/pref_order_important_summary"
+            android:title="@string/pref_order_important_title"
+            android:defaultValue="true" />
+        <ListPreference
+            android:key="pref_order_old"
+            android:title="@string/pref_order_old_title"
+            android:summary="@string/pref_order_old_summary"
+            android:dialogTitle="@string/pref_order_old_dialog_title"
+            android:entries="@array/pref_order_newold_entries"
+            android:entryValues="@array/pref_order_newold_values"
+            android:defaultValue="@string/pref_order_old_default"
+            />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/data_management_category_title"
+        android:key="pref_key_data_management_category">
+        <ListPreference
+            android:key="pref_key_connection_type_list"
+            android:title="@string/connection_type_list_title"
+            android:summary="@string/connection_type_list_summary"
+
+            android:dialogTitle="@string/connection_type_dialog_title"
+            android:entries="@array/pref_connection_type_entries"
+            android:entryValues="@array/pref_connection_type_values"
+            android:defaultValue="@string/pref_connection_type_wifi"
+            />
+    </PreferenceCategory>
+</PreferenceScreen>

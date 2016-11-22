@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="pref_order_newold_entries">
+        <item>Old items first</item>
+        <item>New items first</item>
+    </string-array>
+    <string-array name="pref_order_newold_values">
+        <item>asc</item> <!-- old first -->
+        <item>desc</item> <!-- new first -->
+    </string-array>
+
+    <string-array name="pref_connection_type_entries">
+        <item>Only when on WIFI</item>
+        <item>On any network</item>
+    </string-array>
+    <string-array name="pref_connection_type_values">
+        <item>WIFI</item>
+        <item>Any</item>
+    </string-array>
+</resources>
